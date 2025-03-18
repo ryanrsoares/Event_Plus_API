@@ -11,5 +11,6 @@ namespace EventPlus_.Interfaces
         List<ComentarioEvento> Listar(Guid id);
 
         ComentarioEvento BuscarPorIdUsuario(Guid UsuarioID, Guid EventosID);
+        List<ComentarioEvento> Listar();
     }
 }

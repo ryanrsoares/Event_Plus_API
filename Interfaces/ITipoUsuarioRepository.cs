@@ -1,4 +1,5 @@
-﻿using EventPlus_.Domains;
+﻿using EventPlus_.Controller;
+using EventPlus_.Domains;
 
 namespace EventPlus_.Interfaces
 {
@@ -13,6 +14,6 @@ namespace EventPlus_.Interfaces
         void Deletar(Guid id);
 
         TipoUsuario BuscarPorId(Guid id);
-
+        void Cadastrar(TipoUsuarioRepository tipoUsuarioRepository);
     }
 }

@@ -6,13 +6,13 @@ namespace EventPlus_.Interfaces
     {
         List<Eventos> Listar();
 
-        void Cadastrar(Eventos evento);
+        void Cadastrar(Eventos evento);//
 
         void Atualizar(Guid id, Eventos evento);
 
-        void Deletar(Guid id);
+        void Deletar(Guid id);//
 
-        List<Eventos> ListarPorId(Guid id);
+        List<Eventos> ListarPorId(Guid id);//
 
         Eventos BuscarPorId(Guid id);
 

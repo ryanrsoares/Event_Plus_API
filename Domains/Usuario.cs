@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using EventPlus_.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace EventPlus_.Domains
@@ -34,5 +35,9 @@ namespace EventPlus_.Domains
         [ForeignKey("TipoUsuarioID")]
         public TipoUsuario? TipoUsuarios{ get; set; }
 
+        public static implicit operator Usuario(UsuarioRepository v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
