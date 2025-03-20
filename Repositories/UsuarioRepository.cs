@@ -1,12 +1,15 @@
-﻿using EventPlus_.Domains;
+﻿using EventPlus_.Context;
+using EventPlus_.Domains;
 using EventPlus_.Interfaces;
+using EventPlus_.Utils;
 
 namespace EventPlus_.Repositories
 {
     public class UsuarioRepository : IUsuarioRepository
     {
-        private readonly Usuario _context;
-        public UsuarioRepository( UsuarioRepository context)
+        private readonly Eventos_Context _context;
+
+        public UsuarioRepository(Eventos_Context context)
         {
             _context = context;
         }
@@ -14,7 +17,16 @@ namespace EventPlus_.Repositories
         {
             try
             {
-                Usuario usuarioBsucado = _context.UsuarioID.FistOrDefault(u => u.Email == email)!;
+                Usuario usuarioBuscado = _context.Usuario.FirstOrDefault(u => u.Email == email)!;
+                if (usuarioBuscado != null)
+                {
+                    bool confere = Criptografia.CompararHash(senha, usuarioBuscado.Senha!);
+                    if (confere)
+                    {
+                        return usuarioBuscado;
+                    }
+                }
+                return null!;
             }
             catch (Exception)
             {
@@ -25,12 +37,30 @@ namespace EventPlus_.Repositories
 
         public Usuario BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Usuario usuarioBuscado = _context.Usuario.Find(id)!;
+                return usuarioBuscado;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Cadastrar(Usuario novoUsuario)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Usuario.Add(novoUsuario);
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

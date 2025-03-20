@@ -50,7 +50,6 @@ namespace EventPlus_.Controller
         /// Deletar o tipo do evento pelo ID
         /// </summary>
         /// <returns>Deletar tipo evento</returns>
-        [Authorize]
         [HttpDelete("{id}")]
 
         public IActionResult Delete(Guid id)
@@ -70,7 +69,6 @@ namespace EventPlus_.Controller
         /// Atualiza o tipo do evento pelo ID
         /// </summary>
         /// <returns>Atualizar tipo evento</returns>
-        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, TipoEvento tipoEvento)
         {
@@ -89,7 +87,6 @@ namespace EventPlus_.Controller
         /// Cadastrar o tipo do evento pelo ID
         /// </summary>
         /// <returns>Cadastrar tipo evento</returns>
-        [Authorize]
         [HttpPost]
 
         public IActionResult Post(TipoEvento novoTipoEvento)

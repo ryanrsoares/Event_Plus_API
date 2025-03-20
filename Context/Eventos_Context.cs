@@ -26,7 +26,7 @@ namespace EventPlus_.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server = DESKTOP-0HO9ARA\\SQLEXPRESS; Database = EventPlus; User Id = sa; Pwd = Senai@134; TrustServerCertificate=true;");
+                optionsBuilder.UseSqlServer("Server = NOTE26-S28\\SQLEXPRESS; Database = Event_plus; User Id = sa; Pwd = Senai@134; TrustServerCertificate=true;");
             }
         }
 

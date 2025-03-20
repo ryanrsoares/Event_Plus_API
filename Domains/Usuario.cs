@@ -33,11 +33,6 @@ namespace EventPlus_.Domains
         public Guid TipoUsuarioID { get; set; }
 
         [ForeignKey("TipoUsuarioID")]
-        public TipoUsuario? TipoUsuarios{ get; set; }
-
-        public static implicit operator Usuario(UsuarioRepository v)
-        {
-            throw new NotImplementedException();
-        }
+        public TipoUsuario? TipoUsuarios { get; set; }
     }
 }
