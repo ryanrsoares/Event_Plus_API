@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace EventPlus_.Utils
+﻿namespace webapi.event_.Utils
 {
     public class Criptografia
     {
@@ -9,9 +7,9 @@ namespace EventPlus_.Utils
             return BCrypt.Net.BCrypt.HashPassword(senha);
         }
 
-        public static bool CompararHash(string senhaInformada, string senhaBD)
+        public static bool CompararHash(string senhaInformada, string senhaBanco)
         {
-            return BCrypt.Net.BCrypt.Verify(senhaInformada, senhaBD);
+            return BCrypt.Net.BCrypt.Verify(senhaInformada, senhaBanco);
         }
     }
 }

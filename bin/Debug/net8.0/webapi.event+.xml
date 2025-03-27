@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>webapi.event+</name>
+    </assembly>
+    <members>
+        <member name="M:webapi.event_.Controllers.LoginController.Login(webapi.event_.DTO.LoginDTO)">
+            <summary>
+            Endpoint para Buscar um Login pelo seu id
+            </summary>
+        </member>
+        <member name="T:webapi.event_.Migrations.EventPlus_API">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.EventPlus_API.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.EventPlus_API.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.EventPlus_API.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:webapi.event_.Repositories.ComentariosEventosRepository">
+            <summary>
+            Repositório para gerenciamento dos comentários de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.ComentariosEventosRepository.#ctor(webapi.event_.Contexts.Context)">
+            <summary>
+            Repositório para gerenciamento dos comentários de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.ComentariosEventosRepository.BuscarPorIdUsuario(System.Guid,System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos comentários de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.ComentariosEventosRepository.Cadastrar(webapi.event_.Domains.ComentariosEventos)">
+            <summary>
+            Repositório para gerenciamento dos comentários de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.ComentariosEventosRepository.Deletar(System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos comentários de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.ComentariosEventosRepository.Listar(System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos comentários de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.ComentariosEventosRepository.ListarSomenteExibe(System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos comentários de eventos
+            </summary>
+        </member>
+        <member name="T:webapi.event_.Repositories.EventosRepository">
+            <summary>
+            Repositório para gerenciamento dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.EventosRepository.#ctor(webapi.event_.Contexts.Context)">
+            <summary>
+            Repositório para gerenciamento dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.EventosRepository.Atualizar(System.Guid,webapi.event_.Domains.Eventos)">
+            <summary>
+            Repositório para gerenciamento dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.EventosRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.EventosRepository.Cadastrar(webapi.event_.Domains.Eventos)">
+            <summary>
+            Repositório para gerenciamento dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.EventosRepository.Deletar(System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.EventosRepository.Listar">
+            <summary>
+            Repositório para gerenciamento dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.EventosRepository.ListarPorId(System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.EventosRepository.ProximosEventos">
+            <summary>
+            Repositório para gerenciamento dos eventos
+            </summary>
+        </member>
+        <member name="T:webapi.event_.Repositories.PresencasEventosRepository">
+            <summary>
+            Repositório para gerenciamento das presenças dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.PresencasEventosRepository.#ctor(webapi.event_.Contexts.Context)">
+            <summary>
+            Repositório para gerenciamento das presenças dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.PresencasEventosRepository.Atualizar(System.Guid,webapi.event_.Domains.PresencasEventos)">
+            <summary>
+            Repositório para gerenciamento das presenças dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.PresencasEventosRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Repositório para gerenciamento das presenças dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.PresencasEventosRepository.Deletar(System.Guid)">
+            <summary>
+            Repositório para gerenciamento das presenças dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.PresencasEventosRepository.Inscrever(webapi.event_.Domains.PresencasEventos)">
+            <summary>
+            Repositório para gerenciamento das presenças dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.PresencasEventosRepository.Listar">
+            <summary>
+            Repositório para gerenciamento das presenças dos eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.PresencasEventosRepository.ListarMinhas(System.Guid)">
+            <summary>
+            Repositório para gerenciamento das presenças dos eventos
+            </summary>
+        </member>
+        <member name="T:webapi.event_.Repositories.TiposEventosRepository">
+            <summary>
+            Repositório para gerenciamento dos tipos de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposEventosRepository.#ctor(webapi.event_.Contexts.Context)">
+            <summary>
+            Repositório para gerenciamento dos tipos de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposEventosRepository.Atualizar(System.Guid,webapi.event_.Domains.TiposEventos)">
+            <summary>
+            Repositório para gerenciamento dos tipos de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposEventosRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos tipos de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposEventosRepository.Cadastrar(webapi.event_.Domains.TiposEventos)">
+            <summary>
+            Repositório para gerenciamento dos tipos de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposEventosRepository.Deletar(System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos tipos de eventos
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposEventosRepository.Listar">
+            <summary>
+            Repositório para gerenciamento dos tipos de eventos
+            </summary>
+        </member>
+        <member name="T:webapi.event_.Repositories.TiposUsuariosRepository">
+            <summary>
+            Repositório para gerenciamento dos tipos de usuários
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposUsuariosRepository.#ctor(webapi.event_.Contexts.Context)">
+            <summary>
+            Repositório para gerenciamento dos tipos de usuários
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposUsuariosRepository.Atualizar(System.Guid,webapi.event_.Domains.TiposUsuarios)">
+            <summary>
+            Repositório para gerenciamento dos tipos de usuários
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposUsuariosRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos tipos de usuários
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposUsuariosRepository.Cadastrar(webapi.event_.Domains.TiposUsuarios)">
+            <summary>
+            Repositório para gerenciamento dos tipos de usuários
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposUsuariosRepository.Deletar(System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos tipos de usuários
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.TiposUsuariosRepository.Listar">
+            <summary>
+            Repositório para gerenciamento dos tipos de usuários
+            </summary>
+        </member>
+        <member name="T:webapi.event_.Repositories.UsuariosRepository">
+            <summary>
+            Repositório para gerenciamento dos usuários
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.UsuariosRepository.#ctor(webapi.event_.Contexts.Context)">
+            <summary>
+            Repositório para gerenciamento dos usuários
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.UsuariosRepository.BuscarPorEmailESenha(System.String,System.String)">
+            <summary>
+            Repositório para gerenciamento dos usuários
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.UsuariosRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Repositório para gerenciamento dos usuários
+            </summary>
+        </member>
+        <member name="M:webapi.event_.Repositories.UsuariosRepository.Cadastrar(webapi.event_.Domains.Usuarios)">
+            <summary>
+            Repositório para gerenciamento dos usuários
+            </summary>
+        </member>
+    </members>
+</doc>

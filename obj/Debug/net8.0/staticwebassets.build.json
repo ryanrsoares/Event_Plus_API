@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "OEgCuKTbCagZv6iZddZw9LzcW7AIJZ+dK5OHd5H6ygs=",
-  "Source": "EventPlus_",
-  "BasePath": "_content/EventPlus_",
+  "Hash": "uDBT3BwcH8eC80lDiLHYVSLVnYR0vXvYnfYnf2cO3QE=",
+  "Source": "webapi.event+",
+  "BasePath": "_content/webapi.event+",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

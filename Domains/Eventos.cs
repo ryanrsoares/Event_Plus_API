@@ -1,43 +1,38 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EventPlus_.Domains
+namespace webapi.event_.Domains
 {
     [Table("Eventos")]
     public class Eventos
     {
         [Key]
-        public Guid EventosID { get; set; }
-
-        [Column(TypeName = "VARCHAR(50)")]
-        [Required(ErrorMessage = "Nome do evento é obrigatório!")]
-        public string? NomeEvento { get; set; }
-
-        [Column(TypeName = "TEXT")]
-        [Required(ErrorMessage = "Descrição do evento obrigatória!")]
-        public string? Descricao { get; set; }
+        public Guid IdEvento { get; set; }
 
         [Column(TypeName = "DATE")]
         [Required(ErrorMessage = "A data do evento é obrigatória!")]
         public DateTime DataEvento { get; set; }
 
+        [Column(TypeName = "VARCHAR(100)")]
+        [Required(ErrorMessage = "Nome do evento obrigatório!")]
+        public string? NomeEvento { get; set; }
 
-        [Required(ErrorMessage = "O evento é obrigatório")]
-        public Guid TipoEventoID { get; set; }
+        [Column(TypeName = "TEXT")]
+        [Required(ErrorMessage = "Descrição do evento obrigatório!")]
+        public string? Descricao { get; set; }
 
-        [ForeignKey("TipoEventoID")]
-        public TipoEvento? TipoEvento { get; set; }
+        //ref.tabela TiposEventos
+        public Guid IdTipoEvento { get; set; }
 
+        [ForeignKey("IdTipoEvento")]
+        public TiposEventos? TiposEvento { get; set; }
 
-        [Required(ErrorMessage = "A instituição é obrigatório")]
-        public Guid InstituicaoID { get; set; }
+        //ref.tabela Instituicoes
+        public Guid IdInstituicao { get; set; }
 
-        [ForeignKey("InstituicaoID")]
-        public Instituicao? Instituicao { get; set; }
+        [ForeignKey("IdInstituicao")]
+        public Instituicoes? Instituicao { get; set; }
 
-
-        public Presenca? Presenca { get; set; }
-
-
+        public PresencasEventos? PresencasEventos { get; set; }
     }
 }
